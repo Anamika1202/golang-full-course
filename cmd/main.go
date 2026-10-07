@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"golang-full-course/helper"
 	"sync"
 	"time"
 )
@@ -27,7 +28,7 @@ func main() {
 
 	// for {
 	firstName, lastName, email, userTickets := getUserInput()
-	isValidName, isValidEmail, isValidTicketNumber := validateUserInput(firstName, lastName, email, userTickets, remainingTickets)
+	isValidName, isValidEmail, isValidTicketNumber := helper.ValidateUserInput(firstName, lastName, email, userTickets, remainingTickets)
 
 	if isValidName && isValidEmail && isValidTicketNumber {
 
