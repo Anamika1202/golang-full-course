@@ -1,4 +1,4 @@
-package introdution
+package Introduction
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 func Checkprimenumber() {
 	var n int
 	fmt.Scan(&n)
-	p	rime := n > 1
+	prime := n > 1
 
 	for i := 2; i*i <= n && prime; i++ {
 
