@@ -1,4 +1,4 @@
-package Introduction
+package loops
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ func Checkprimenumber() {
 	fmt.Scan(&n)
 	prime := n > 1
 
-	for i := 2; i*i <= n && prime; i++ {
+	for i := 2; i < n && prime; i++ {
 
 		if n%i == 0 {
 			prime = false
