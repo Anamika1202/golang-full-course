@@ -13,6 +13,7 @@ func Checkprimenumber() {
 
 		if n%i == 0 {
 			prime = false
+			break
 		}
 
 	}

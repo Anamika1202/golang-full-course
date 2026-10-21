@@ -1,6 +1,9 @@
 package main
 
-import loops "golang-full-course/golang-topics/Loops"
+import (
+	"fmt"
+	loops "golang-full-course/golang-topics/Loops"
+)
 
 func main() {
 	//introdution.Sumoftwonumber()
@@ -10,6 +13,14 @@ func main() {
 	//introdution.Checkprimenumber()
 
 	//loops.PrintNumber()
-	loops.SquareStartPattern()
+	//.SquareStartPattern()
+
+	fmt.Println("Enter the Number you want to Reverse")
+	var num uint
+
+	fmt.Scan(&num)
+
+	revnum := loops.ReversetheGivenNumber(num)
+	fmt.Printf("reverse Number Is %d", revnum)
 
 }
